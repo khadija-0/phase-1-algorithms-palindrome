@@ -1,7 +1,12 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let wordArr = []
+  for (let i = word.length-1; i > -1; i--) {
+    wordArr.push(word[i])
+  }
+  const palindrome = wordArr.join("")
+  return palindrome === word
 }
-
 /* 
   Add your pseudocode here
 */
